@@ -1,6 +1,6 @@
 ---
 - name: Play de teste
-  hosts: CIPPCRDEVMSGI02
+  hosts: server
   become: true
   gather_facts: false
   tasks:
