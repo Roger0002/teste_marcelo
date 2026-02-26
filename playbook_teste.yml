@@ -1,0 +1,11 @@
+---
+- name: Play de teste
+  hosts: CIPPCRDEVMSGI02
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Reboot a machine
+      ibm.power_aix.reboot:
+        pre_reboot_delay: 20
+        post_reboot_delay: 20
+        reboot_timeout: 500
